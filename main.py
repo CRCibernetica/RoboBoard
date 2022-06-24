@@ -27,6 +27,3 @@ for i in range(255):
 # los motores reciben velocidades de -1023 a 1023 (detras - adelante)
 rb.motor_1(1023)
 rb.motor_2(-1023)
-sleep_ms(2000)
-rb.motor_1(0)
-rb.motor_2(0)

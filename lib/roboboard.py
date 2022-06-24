@@ -22,7 +22,7 @@ class RoboBoard:
     def motor_1(self, vel=0):
         if vel < -1023 | vel > 1023:
             print(f"velocidad no valida: {vel}")
-        if vel > 0:
+        if vel >= 0:
             self.m1a.duty(vel)
             self.m1b.duty(0)
         if vel < 0:
@@ -32,7 +32,7 @@ class RoboBoard:
     def motor_2(self, vel=0):
         if vel < -1023 | vel > 1023:
             print(f"velocidad no valida: {vel}")
-        if vel > 0:
+        if vel >= 0:
             self.m2a.duty(vel)
             self.m2b.duty(0)
         if vel < 0:
