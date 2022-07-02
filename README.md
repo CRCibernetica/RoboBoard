@@ -1,2 +1,2 @@
 # RoboBoard
-CRCibernetica RoboBoard MicroPython library
+CRCibernetica RoboBoard MicroPython support
