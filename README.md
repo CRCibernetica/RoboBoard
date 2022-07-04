@@ -14,7 +14,7 @@ The RoboBoard is based on the ESP32 microcontroller and features the following c
 * Programmable using Micropython or the Arduino IDE (C/C++)
 * USB-C interfaz for programming and debugging (CH340G serial converter)
 * Standard .1" headers for convenient interfacing with GND and Vcc for each pin
-* STEMMA/QWIIC 4-pin interfaz for easy connections to Adafruit and Sparkfun i2c modules
+* STEMMA/QWIIC 4-pin interface for easy connections to Adafruit and Sparkfun i2c modules
 * Direct DC power for battery or power supply (5VDC - 9VDC)
 * 7 pins for servos or other applications that require direct power
 
