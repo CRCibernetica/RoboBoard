@@ -30,6 +30,6 @@ Apart from the standard micropython modules the RoboBoard firmware includes the 
  * ssd1306 - oled display
  * hcsr04 - ultrasonic sensor
  * sx127x - lora radio driver
- * chispa - a mqtt framework for IoT and Industry 4.0 applications
+ * chispa - mqtt framework for IoT and Industry 4.0 applications
  
 
