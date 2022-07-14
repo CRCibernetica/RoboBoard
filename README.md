@@ -46,7 +46,7 @@ Apart from the standard micropython modules the RoboBoard firmware includes the 
 * Select the serial port where the RoboBoard is connected and the location of the downloaded firmware (roboboard-xxxx.bin file)
 * Click on `Install`. The process of erasing and installing the firmware will taken several minutes
 
-![install video](/img/installationvideo.png)(https://youtu.be/QUobo48bmSs)
+[![install video](/img/installationvideo.png)](https://youtu.be/QUobo48bmSs)
 
 
 
