@@ -31,13 +31,22 @@ The latest RoboBoard firmware can be downloaded here:
  ![download](/img/download.png)
  
 Apart from the standard micropython modules the RoboBoard firmware includes the following:
- * roboboard - modules for controlling the onboard motor drivers, the RGB LED and servos
- * ssd1306 - oled display
- * hcsr04 - ultrasonic sensor
- * sx127x - lora radio driver
- * chispa - mqtt framework for IoT and Industry 4.0 applications
+* roboboard - modules for controlling the onboard motor drivers, the RGB LED and servos
+* ssd1306 - oled display
+* hcsr04 - ultrasonic sensor
+* sx127x - lora radio driver
+* chispa - mqtt framework for IoT and Industry 4.0 applications
  
 ### Getting Started
-Connect the 
+* Connect the RoboBoard to a USB port
+* Open Thonny and select `Run-->Select Interpreter`
+* In the `Interpreter` tab select `Micropython (ESP32)`
+* Select the serial port where the RoboBoard is connected
+* Click on `Install or update firmware`
+* Select the serial port where the RoboBoard is connected and the location of the downloaded firmware (roboboard-xxxx.bin file)
+* Click on `Install`. The process of erasing and installing the firmware will taken several minutes
+
+![select interpreter](/img/SelectInterpreter.png)
+
  
 
