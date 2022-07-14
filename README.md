@@ -24,10 +24,10 @@ We recommend the use of the free and open source [Thonny](https://thonny.org) In
 
 ### CRCibernetica RoboBoard Micropython firmware
 The latest RoboBoard firmware can be downloaded here:
-
  * [RoboBoard firmware](https://github.com/CRCibernetica/RoboBoard/tree/main/firmware)
  
  Select the `roboboard-xxxx.bin` file and click the DOWNLOAD button on the right.
+ 
  ![download](/img/download.png)
  
 Apart from the standard micropython modules the RoboBoard firmware includes the following:
