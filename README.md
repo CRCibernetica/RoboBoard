@@ -47,6 +47,15 @@ Apart from the standard micropython modules the RoboBoard firmware includes the 
 * Click on `Install`. The process of erasing and installing the firmware will taken several minutes
 
 ![select interpreter](/img/SelectInterpreter.png)
+![select Micropython ESP32](/img/ThonnyOptionsInterpreter.png)
+![select port](/img/ThonnyOptionsPort.png)
+![install or update firmware](/img/InstallOrUpdateFirmware.png)
+![firmware installer](/img/FirmwareInstaller.png)
+![installing](/img/installing.png)
+![initial repl](/img/initialrepl.png)
+
+
+
 
  
 
