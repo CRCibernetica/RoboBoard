@@ -48,6 +48,25 @@ Apart from the standard micropython modules the RoboBoard firmware includes the 
 
 [![install video](/img/installationvideo.png)](https://youtu.be/QUobo48bmSs)
 
+## RoboBoard module 
+The RoboBoard module contains helper classes for functions that are unique to the board:
+* functions to control the speed and direction of `motor_1` and `motor_2`
+* functions to control the onboard `RGB LED`
+* functions to control standard hobby `servo motors`
+
+![Example code can be found here.](https://github.com/CRCibernetica/RoboBoard/tree/main/examples)
+
+### General Usage
+Import the RoboBoard class and create an instance
+```
+from roboboard import RoboBoard
+
+rb = RoboBoard()
+```
+### Motor control
+
+
+
 
 
 
