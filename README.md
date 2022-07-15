@@ -36,7 +36,9 @@ Apart from the standard micropython modules the RoboBoard firmware includes the 
 * hcsr04 - ultrasonic sensor
 * sx127x - lora radio driver
 * chispa - mqtt framework for IoT and Industry 4.0 applications
+
 The micropython firmware was built using the code and instructions found at:
+
 [Github Micropython Repository](https://github.com/micropython/micropython)
 ### Getting Started
 * Connect the RoboBoard to a USB port
