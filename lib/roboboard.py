@@ -86,7 +86,7 @@ class RoboBoard:
             """
 
             duty = int(self._duty_eq(angle))
-            self._servo.set_duty(duty)
+            self._servo.duty_u16(duty)
         
         def set_duty(self, duty):
             """
