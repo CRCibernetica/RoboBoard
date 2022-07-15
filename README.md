@@ -140,7 +140,7 @@ while True:
     sleep_ms(2000)
 ```
 #### set_duty(0-65535)
-The duty cycle of the PWM signal can be manually set in order to find the exact values for your particular servo. The duty cycle can be set from 0 (0%) to 1023 (100%). For a normal 50Hz hobby servo the period is 20mS (1/50Hz). Typically, the 0 degree signal is 1mS and the 180 degree signal is 2mS. Therefore the minimum and maximum duty cycle values would be 3277 and 6553.
+The duty cycle of the PWM signal can be manually set in order to find the exact values for your particular servo. For a normal 50Hz hobby servo the period is 20mS (1/50Hz). Typically, the 0 degree signal is 1mS and the 180 degree signal is 2mS. Therefore the minimum and maximum duty cycle values would be 3277 and 6553 respectively.
 ```
 from roboboard import RoboBoard
 rb = RoboBoard()
