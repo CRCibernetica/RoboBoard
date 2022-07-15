@@ -65,7 +65,7 @@ class RoboBoard:
             self._servo.freq(50) # 50Hz for most hobby servos
             
             # Calibrate the servo
-            self._duty_eq = self.calibrate(min_duty = 51, max_duty = 102)
+            self._duty_eq = self.calibrate(min_duty = 3277, max_duty = 6553)
             self.angle(0)
         
         def calibrate(self, min_duty, max_duty, min_angle = 0, max_angle = 180):
@@ -94,4 +94,4 @@ class RoboBoard:
             Manually set the duty cycle of the signal.
             
             """
-            self._servo.duty(duty)
+            self._servo.duty_u16(duty)

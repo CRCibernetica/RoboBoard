@@ -139,15 +139,15 @@ while True:
     servo1.angle(170)
     sleep_ms(2000)
 ```
-#### set_duty(0-1023)
-The duty cycle of the PWM signal can be manually set in order to find the exact values for your particular servo. The duty cycle can be set from 0 (0%) to 1023 (100%). For a normal 50Hz hobby servo the period is 20mS (1/50Hz). Typically, the 0 degree signal is 1mS and the 180 degree signal is 2mS. Therefore the minimum and maximum duty cycle would be 51 and 102.
+#### set_duty(0-65535)
+The duty cycle of the PWM signal can be manually set in order to find the exact values for your particular servo. The duty cycle can be set from 0 (0%) to 1023 (100%). For a normal 50Hz hobby servo the period is 20mS (1/50Hz). Typically, the 0 degree signal is 1mS and the 180 degree signal is 2mS. Therefore the minimum and maximum duty cycle values would be 3277 and 6553.
 ```
 from roboboard import RoboBoard
 rb = RoboBoard()
 
 servo1 = rb.Servo(4)
 
-servo1.set_duty(51) # set the servo to the minimum angle
+servo1.set_duty(3277) # manually set the servo to the minimum angle
 ```
 #### calibrate(min_duty, max_duty, min_angle = 0, max_angle = 180)
 After determining the exact duty cycle for the minimum and maximum angles, the calibrate function can be used to accurately map the servo.
@@ -156,13 +156,6 @@ from roboboard import RoboBoard
 rb = RoboBoard()
 
 servo1 = rb.Servo(4)
-servo1.calibrate(51, 102, 10, 170) # map duty cycles to min and max angles
+servo1.calibrate(3277, 6553, 10, 170) # map duty cycles to min and max angles
 servo1.angle(90)
 ```
-
-
-
-
-
- 
-
