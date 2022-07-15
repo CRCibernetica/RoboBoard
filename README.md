@@ -75,6 +75,8 @@ rb.motor_2(-1023) # full reverse
 The onboard RGB LED can be used to indicate different modes or display how your robot is thinking. There are two functions to control the RGB LED:
 * `pixel(RGB color tuple)`
 * `arcoiris(number from 0 to 255)`
+#### pixel()
+The `pixel()` function takes in a RGB tuple and displays the color on the LED
 ```
 from roboboard import RoboBoard
 rb = RoboBoard()
@@ -88,6 +90,21 @@ PURPLE = (255,0,255)
 
 rb.pixel(BLUE)
 ```
+#### arcoiris()
+The `arcoiris()` function displays a color of the rainbow. By changing the number over time a rainbow effect can be created. The numbers are from 0 to 255.
+```
+from roboboard import RoboBoard
+from time import sleep_ms
+
+rb = RoboBoard()
+
+while True:
+    for i in range(256):
+        rb.arcoiris(i)
+        print(i)
+        sleep_ms(5)
+```
+
 
 
 
