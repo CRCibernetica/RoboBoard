@@ -150,7 +150,7 @@ servo1 = rb.Servo(4)
 servo1.set_duty(3277) # manually set the servo to the minimum angle
 ```
 #### calibrate(min_duty, max_duty, min_angle = 0, max_angle = 180)
-After determining the exact duty cycle for the minimum and maximum angles, the calibrate function can be used to accurately map the servo.
+After determining the exact duty cycle for the minimum and maximum angles, the calibrate function can be used to accurately map the servo to its actual minimum and maximum angles.
 ```
 from roboboard import RoboBoard
 rb = RoboBoard()
