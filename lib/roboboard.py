@@ -77,7 +77,6 @@ class RoboBoard:
             slope = (min_duty-max_duty)/(min_angle - max_angle)
             y_intercept = min_duty - slope * (min_angle)
             duty_calc = lambda angle: slope * angle + y_intercept
-            
             return duty_calc
 
         def angle(self, angle):
@@ -87,7 +86,7 @@ class RoboBoard:
             """
 
             duty = int(self._duty_eq(angle))
-            self._servo.duty(duty)
+            self._servo.set_duty(duty)
         
         def set_duty(self, duty):
             """
