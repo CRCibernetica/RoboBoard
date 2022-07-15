@@ -36,7 +36,8 @@ Apart from the standard micropython modules the RoboBoard firmware includes the 
 * hcsr04 - ultrasonic sensor
 * sx127x - lora radio driver
 * chispa - mqtt framework for IoT and Industry 4.0 applications
- 
+The micropython firmware was built using the code and instructions found at:
+[Github Micropython Repository](https://github.com/micropython/micropython)
 ### Getting Started
 * Connect the RoboBoard to a USB port
 * Open Thonny and select `Run-->Select Interpreter`
@@ -103,6 +104,25 @@ while True:
         rb.arcoiris(i)
         print(i)
         sleep_ms(5)
+```
+### Servo control
+Up to 7 hobby servo motors can be controlled simultaneously using the RoboBoard.
+#### Create servo instance
+Multiple servo instances can be created using the `Servo(pin)` function
+```
+from roboboard import RoboBoard
+from time import sleep_ms
+
+rb = RoboBoard()
+
+# Create servo1 on Pin 4, servo2 on Pin 5
+servo1 = rb.Servo(4)
+servo2 = rb.Servo(5)
+```
+#### angle(0-180)
+Change the servo positions using `angle(degrees)`. By default the range is 0 - 180.
+```
+servo.angle(90) # change the servo position to 90 degrees
 ```
 
 
