@@ -60,12 +60,18 @@ The RoboBoard module contains helper classes for functions that are unique to th
 Import the RoboBoard class and create an instance
 ```
 from roboboard import RoboBoard
-
 rb = RoboBoard()
 ```
 ### Motor control
+The two motors are named `motor_1` and `motor_2`. They can be controlled by giving them a number between -1023 (full reverse), 0 (stopped), and 1023 (full forward).
 
+```
+from roboboard import RoboBoard
+rb = RoboBoard()
 
+rb.motor_1(1023) # full forward
+rb.motor_2(-1023) # full reverse
+```
 
 
 
