@@ -54,7 +54,7 @@ The RoboBoard module contains helper classes for functions that are unique to th
 * functions to control the onboard `RGB LED`
 * functions to control standard hobby `servo motors`
 
-![Example code can be found here.](https://github.com/CRCibernetica/RoboBoard/tree/main/examples)
+[Example code can be found here](https://github.com/CRCibernetica/RoboBoard/tree/main/examples)
 
 ### General Usage
 Import the RoboBoard class and create an instance
