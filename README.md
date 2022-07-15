@@ -54,7 +54,7 @@ The RoboBoard module contains helper classes for functions that are unique to th
 * functions to control the onboard `RGB LED`
 * functions to control standard hobby `servo motors`
 
-[Example code can be found here](https://github.com/CRCibernetica/RoboBoard/tree/main/examples)
+[Example code can be found here for all the functions](https://github.com/CRCibernetica/RoboBoard/tree/main/examples)
 
 ### General Usage
 Import the RoboBoard class and create an instance
@@ -64,7 +64,6 @@ rb = RoboBoard()
 ```
 ### Motor control
 The two motors are named `motor_1` and `motor_2`. They can be controlled by giving them a number between -1023 (full reverse), 0 (stopped), and 1023 (full forward).
-
 ```
 from roboboard import RoboBoard
 rb = RoboBoard()
@@ -72,7 +71,23 @@ rb = RoboBoard()
 rb.motor_1(1023) # full forward
 rb.motor_2(-1023) # full reverse
 ```
+### RGB LED control
+The onboard RGB LED can be used to indicate different modes or display how your robot is thinking. There are two functions to control the RGB LED:
+* `pixel(RGB color tuple)`
+* `arcoiris(number from 0 to 255)`
+```
+from roboboard import RoboBoard
+rb = RoboBoard()
 
+# the colors are in RGB (red, green, blue format) with values between 0 and 255
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+YELLOW = (255,255,0)
+PURPLE = (255,0,255)
+
+rb.pixel(BLUE)
+```
 
 
 
