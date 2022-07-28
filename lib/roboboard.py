@@ -4,6 +4,7 @@ from neopixel import NeoPixel
 class RoboBoard:
     def __init__(self, m1a=12, m1b=14, m2a=13, m2b=15):
         self._pixel_pin = Pin(2, Pin.OUT)
+        self._brightness = 0.5
         self._np = NeoPixel(self._pixel_pin, 1)
         self._np[0] = (0,0,0)
         self._m1a = PWM(Pin(m1a))
@@ -12,8 +13,23 @@ class RoboBoard:
         self._m2b = PWM(Pin(m2b))
     
     def pixel(self, color=(0,0,0)):
+        r,g,b = color
+        r = int(r * self._brightness)
+        g = int(g * self._brightness)
+        b = int(b * self._brightness)
+        color = (r,g,b)
+        #print('color',color)
         self._np[0] = color
         self._np.write()
+    
+    @property
+    def brightness(self):
+        return self._brightness
+    
+    @brightness.setter
+    def brightness(self, new_brightness):
+        if new_brightness <= 1 or new_brightness >= 0:
+            self._brightness = new_brightness
     
     def arcoiris(self, n=0):
         color = self._wheel(n)
