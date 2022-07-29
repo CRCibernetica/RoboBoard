@@ -33,6 +33,8 @@ The latest RoboBoard firmware can be downloaded here:
 Apart from the standard micropython modules the RoboBoard firmware includes the following:
 * roboboard - modules for controlling the onboard motor drivers, the RGB LED and servos
 * ssd1306 - oled display
+* scd4x - CO2, temperature and humidity sensor
+* bme688 - temperature, humidity, pressure and gas Sensor
 * hcsr04 - ultrasonic sensor
 * sx127x - lora radio driver
 * chispa - mqtt framework for IoT and Industry 4.0 applications
